@@ -6,7 +6,7 @@ int main(){
     char str[TAM];
     printf("escreva uma palavra   \n");
     fgets(str, sizeof(str),stdin);
-    for (int i = 0; i != '\0'; i++){
+    for (int i = 0; str[i] != '\0'; i++){
         if(str[i] == '\n'){
             str[i] = '\0';
             break;
